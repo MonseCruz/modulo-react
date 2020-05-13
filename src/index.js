@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const name = 'Monse'
+const hello = <h1>Hello {name}.</h1>
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  //<React.StrictMode>
+  //  <App />
+  //</React.StrictMode>,
+  hello,
   document.getElementById('root')
 );
 
