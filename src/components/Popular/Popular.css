@@ -1,0 +1,10 @@
+.Number{
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.Popular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

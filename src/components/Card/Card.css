@@ -1,0 +1,10 @@
+.Card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1000px;
+}
+.card-content{
+    width: 80%;
+    text-align: justify;
+}
