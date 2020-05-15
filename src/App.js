@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // Components
-// import Clock from './components/Clock/Clock'
+import Clock from './components/Clock/Clock'
 import Card from './components/Card/Card'
 import Popular from './components/Popular/Popular'
+import Counter from './components/Counter/Counter';
 
 const data = [
   {
@@ -105,7 +106,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-         
+        { <Clock /> }
+        { <Counter /> }
         </header>
         <div className="container-body">
           <div className='cards-container'>
@@ -115,7 +117,7 @@ export default class App extends Component {
             {this._renderPopulars()}
           </div>
         </div>
-        {/* <Clock /> */}
+       
       </div>
     )
   }
