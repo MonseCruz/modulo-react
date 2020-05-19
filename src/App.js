@@ -6,6 +6,8 @@ import Clock from './components/Clock/Clock'
 import Card from './components/Card/Card'
 import Popular from './components/Popular/Popular'
 import Counter from './components/Counter/Counter';
+import Button from './components/Button'
+import Note from './components/notes'
 
 const data = [
   {
@@ -106,8 +108,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+        { <Note/>}
         { <Clock /> }
-        { <Counter /> }
+        { <Counter increment= {2} /> }
+        { <Button />}
         </header>
         <div className="container-body">
           <div className='cards-container'>

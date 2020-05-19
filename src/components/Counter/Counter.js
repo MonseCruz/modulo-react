@@ -16,6 +16,8 @@ export default class Counter extends Component{
     componentDidUpdate(){
         if(this.state.counter == 20){
            clearInterval(this.dateInterval)
+        }else if(this.state.counter % 8 === 0){
+            console.log(this.state.counter +' es multiplo de 8')
         }
     }
 
@@ -23,14 +25,16 @@ export default class Counter extends Component{
             clearInterval(this.dateInterval)
     }
   
-    lap(increment = 2){
+    lap(){
+        const {increment} = this.props
+        const {counter} = this.state
         this.setState({
-        counter: this.state.counter + increment
+        counter: counter + increment
         })
     }
 
     render(){
-        if(this.state.counter % 8 === 0){console.log(this.state.counter +' es multiplo de 8')}
+       
         return(
            <div>
                <p>Counter</p>
