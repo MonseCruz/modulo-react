@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // Components
-import Clock from './components/Clock/Clock'
+/* import Clock from './components/Clock/Clock'
 import Card from './components/Card/Card'
 import Popular from './components/Popular/Popular'
 import Counter from './components/Counter/Counter';
 import Button from './components/Button'
 import Note from './components/notes'
+import Form from './components/Form'; 
+import Conversor from './components/Conversor'; */
+import Button from './components/Button'
+import ConditionalRendering from './components/ConditionalRendering';
 
 const data = [
   {
@@ -62,7 +66,7 @@ const dataPopular = [
 
 export default class App extends Component {
 
-  _renderCards() {
+/*   _renderCards() {
     return data.map(({
       category,
       title,
@@ -102,26 +106,29 @@ export default class App extends Component {
         />
       )
     })
-  }
+  } */
 
   render () {
     return (
       <div className="App">
         <header className="App-header">
-        { <Note/>}
+        {/* { <Note/>}
         { <Clock /> }
         { <Counter increment= {2} /> }
-        { <Button />}
+        { <Button />} */}
+        {/* { <Conversor/>} */}
+        
         </header>
-        <div className="container-body">
+        {/* <div className="container-body">
           <div className='cards-container'>
             {this._renderCards()}
           </div>
           <div className='populars-container'>
             {this._renderPopulars()}
           </div>
-        </div>
-       
+        </div> */}
+        
+        {<ConditionalRendering/>}
       </div>
     )
   }

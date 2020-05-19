@@ -1,0 +1,30 @@
+.menu{
+    height: 1000px;
+    margin-top: 0;
+    margin-left: -350px;
+    width: 300px;
+    background-color: deeppink;
+}
+
+.showMenu{
+    height: 1000px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 300px;
+    background-color: deeppink;
+}
+
+.btn{
+    border-radius: 90px;
+    color: fuchsia;
+    border-color: fuchsia;
+    background-color: #ffffff;
+    box-shadow:10,10,10 gray;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.btn:hover{
+    color: #ffffff;
+    background-color: fuchsia;
+}
