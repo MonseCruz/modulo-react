@@ -11,6 +11,7 @@ import Home from './pages/Home'
 import Note from './pages/Notes'
 import Menu from './pages/Menu'
 import Converter from './pages/Converter'
+import CreditCard from './pages/CreditCard'
 
 export default class App extends Component {
 
@@ -28,6 +29,9 @@ export default class App extends Component {
             </Route>
             <Route exact path="/Converter">
               <Converter />
+            </Route>
+            <Route exact path="/CreditCard">
+              <CreditCard />
             </Route>
           </Switch>
         </div>
