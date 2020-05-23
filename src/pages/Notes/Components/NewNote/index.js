@@ -24,6 +24,10 @@ export default class NewNote  extends Component{
       content
     }
     this.props.handleNewNote(note)
+    this.setState({
+      title: "",
+      content:""
+    })
   }
   render (){
     return(
